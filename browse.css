@@ -1,0 +1,142 @@
+    .bookcontainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: black;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 50px;
+        background-color:rgb(00,00,00);
+        gap: 20px;
+
+    }
+
+    h2{
+        text-align:  center;
+        padding:20px;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.25);
+        
+        z-index: -10;
+        
+    /*    flex-direction: column;*/
+    }
+
+
+    .bookcard{
+        padding: 30px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        width:calc(33.33% - 20px);
+        height: 30vh;
+
+        border-radius: 5px;
+        border: solid black 2px;
+        font-size: 10p;
+        color: black;
+        background-color: azure;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookcard:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+   
+
+
+
+    /*change the word after bookcard to a different one and then put that class in the desired div for background img. xy value controlled through % in backgrd-pos. cover ensures pic covers the whole container*/
+
+
+    .bookcard.card1{
+        background: url('../book/povertybg.jpeg') center/cover;
+        color:white;
+        background-position: 20% 20%;
+    }
+
+    .bookcard.card1 a, .bookcard.card2 a, .bookcard.card3 a, .bookcard.card4 a, .bookcard.card5 a, .bookcard.card6 a, .bookcard.card7 a, .bookcard.card8 a, .bookcard.card9 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .bookcard.card1 a:hover {
+        color: #336699;
+    }
+
+
+
+    .bookcard.card2{
+        background: url('../book/inequality.jpg') center/cover;
+        color:white;
+        background-position: 20% 20%;
+    }
+    .bookcard.card2 a:hover {
+        color: #336699;
+    }
+
+
+
+    .bookcard.card3{
+        background: url('../book/climatechangebg.jpg') center/cover;
+        color:white;
+        background-position: 20% 75%;
+    }
+    .bookcard.card3 a:hover {
+        color: #336699;
+    }
+
+
+    .bookcard.card4{
+        background: url('../book/Discrimination.jpg') center/cover;
+        color:white;
+        background-position: 40% 20%;
+    }
+    .bookcard.card4 a:hover {
+        color: #336699;
+    }
+
+
+
+    .bookcard.card5{
+        background: url('../book/mental.jpg') center/cover;
+        color:white;
+        background-position: 20% 80%;
+    }
+    .bookcard.card5 a:hover {
+        color: #336699;
+    }
+
+
+    .bookcard.card6{
+        background: url('../book/Humanrights.jpg') center/cover;
+        color:white;
+        background-position: 20% 60%;
+    }
+    .bookcard.card6 a:hover {
+        color: #336699;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

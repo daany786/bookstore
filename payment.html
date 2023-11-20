@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  
+  <link href="../css/payment.css" rel="stylesheet">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Oswald:wght@200;400&family=Playfair+Display&family=Poppins:wght@100&family=Roboto+Condensed:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:rgb(00,00,00);
+    --main-color:rgb(3,119,227);
+    --other-color:#b5b9bf;
+
+    --h1-font:4.5rem;
+    --h2-font:2.9rem;
+    --p-font:1rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16%;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+}
+.logo{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a {
+font-size: var(--p-font);
+font-weight: 750;
+color: var(--text-color);
+margin-left: 40px;
+transition: all 0.5s ease;
+}
+.navlist a:hover{
+    padding-right: 10px;
+    color: var(--main-color);
+}
+#menu-icons{
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.h-btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: transparent;
+    color: var(--text-color);
+    border: 4px solid var(--main-color);
+    transform: scale(1.1);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.h-btn:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.1);
+}
+    </style>
+    </head>
+
+<body>
+  <header>
+    <a href="./newhomepage.html" class="logo">My <span>Bookstore</span></a>
+    <div class="bx bx-menu" id="menu-icons"></div>
+        <ul class="navlist">
+            <li><a href="./newhomepage.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contact us.html">Contact</a></li>
+                <li><a href="./payment.html">Buy Now</a></li>
+                <li><a href="./browse.html">Categories</a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="/Pages/registernow.html" class="h-btn">Register Now</a>
+        </div>
+</header>
+    <div class="container" id="gradient">
+    
+    <div class="cardslogo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1158px-Mastercard-logo.svg.png" alt="mastercard logo">
+      <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-1024.png" alt="visa logo">
+    </div>
+    
+<br>
+                
+    <h1>Payment Gateway</h1>
+        <br>
+    <form id="debit-card-form">
+        
+        <label for="cardnumber">Card Number</label>
+        <input type="number" id="cardnumber" name="cardnumber" placeholder="1234 1234 1234 1234" title="####-####-####-#### Format" maxlength="16" required>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" title="Enter The Name On The Card"  pattern="[A-Za-z]+" required>
+        
+
+
+    <div class="expirycontainer">
+        <div>
+          <label for="expiry">Expiry</label>
+          <input type="number" id="expiry" name="expiry" placeholder="MM/YY" title="MM/YY Format" maxlength="4"  required>
+        </div>
+        
+        <div>
+          <label for="cvv">CVV</label>
+          <input type="number" id="cvv" name="cvv" placeholder="123" title="Security Code On The Back Of The Card" maxlength="3" required>
+        </div>
+    </div>
+    
+    <div class="billingcontainer" style="margin-bottom:10px; padding-bottom: 10px;" >
+      <label for="address">Billing Address</label>
+      <input type="text" id="address" name="address" placeholder="Street Address" required>
+    </div>    
+        
+      <button type="submit">Proceed</button>
+   
+        </form>
+  </div>
+    
+    
+    
+    
+</body>
+</html>

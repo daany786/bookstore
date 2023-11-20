@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandu</title>
+    <link rel="stylesheet" href="../css/homenew.css">
+    <link rel="stylesheet" href="../Font Awesome/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Oswald:wght@200;400&family=Playfair+Display&family=Poppins:wght@100&family=Roboto+Condensed:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:rgb(5,9,31);
+    --main-color:rgb(3,119,227);
+    --other-color:#b5b9bf;
+
+    --h1-font:4.5rem;
+    --h2-font:2.9rem;
+    --p-font:1rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16%;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+}
+.logo{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a {
+font-size: var(--p-font);
+font-weight: 750;
+color: var(--text-color);
+margin-left: 40px;
+transition: all 0.5s ease;
+}
+.navlist a:hover{
+    padding-right: 10px;
+    color: var(--main-color);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">My <span>Bookstore</span></a>
+        <div class="bx bx-menu" id="menu-icons"></div>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+            <div class="top-btn">
+                <a href="#" class="h-btn">Contact Us</a>
+            </div>
+    </header>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="../css/homenew.css">
+    <link rel="stylesheet" href="../Font Awesome/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/browse.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Oswald:wght@200;400&family=Playfair+Display&family=Poppins:wght@100&family=Roboto+Condensed:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:rgb(00,00,00);
+    --main-color:rgb(3,119,227);
+    --other-color:#b5b9bf;
+
+    --h1-font:4.5rem;
+    --h2-font:2.9rem;
+    --p-font:1rem;
+}
+body{
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16%;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+}
+.logo{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a {
+font-size: var(--p-font);
+font-weight: 750;
+color: var(--text-color);
+margin-left: 40px;
+transition: all 0.5s ease;
+}
+.navlist a:hover{
+    padding-right: 10px;
+    color: var(--main-color);
+}  
+.footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        position:relative
+     }
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }    
+.footer .row a:hover{
+    color:#fff;
+    } 
+ .footer .row ul{
+    width:100%;
+    } 
+ .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }  
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    @media (max-width:720px){
+ .footer{
+    text-align:center;
+    padding:5%;
+    }
+}
+.footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+.footer .row a i{
+    margin:0% 3%;
+    }    
+.footer .row  ul li{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./newhomepage.html" class="logo">My <span>Bookstore</span></a>
+        <div class="bx bx-menu" id="menu-icons"></div>
+            <ul class="navlist">
+                <li><a href="">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contact us.html">Contact</a></li>
+                <li><a href="./payment.html">Buy Now</a></li>
+                <li><a href="./browse.html">Categories</a></li>
+            </ul>
+            <div class="top-btn">
+                <a href="./registernow.html" class="h-btn">Register Now</a>
+            </div>
+    </header>
+    
+    <section>
+   <div class="bookcontainer">
+       
+       <div class="bookcard card1">
+
+           <a href="../Pages/booksdaanyaal.html">
+                <h2 >Poverty</h2>
+            </a>   
+        </div>
+       
+       <div class="bookcard card2">
+           <a href="../Pages/inequality.html"> 
+                <h2>Inequality</h2>
+           </a>
+       </div>
+       
+       <div class="bookcard card3">
+            <a href="../Pages/Climate Chnage.html">    
+                <h2>Climate Change</h2>
+           </a>
+        </div>
+       
+       <div class="bookcard card4">
+            <a href="../Pages/Discrimination.html">
+                <h2>Discrimination</h2>
+           </a>    
+        </div>
+       
+       <div class="bookcard card5">
+            <a href="../Pages/Mental Health.html">
+                <h2>Mental Health</h2>
+           </a>    
+        </div>
+       
+       <div class="bookcard card6">
+            <a href="../Pages/Human Rights.html">
+                <h2>Human Rights</h2>
+           </a>    
+        </div>
+       
+       
+       
+    
+
+    
+    
+    </div> 
+    
+    
+</section>    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<footer>
+    
+  <div class="footer">
+    <div class="row">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+        <ul>
+            <li><a href="./contact us.html">Contact us</a></li>
+            <li><a href="./portfolio.html">Our Journey</a></li>
+            <li><a href="./privacy & policy.html">Privacy Policy</a></li>
+            <li><a href="./Terms and Conditions.html">Terms & Conditions</a></li>
+            <li><a href="./career.html">Career</a></li>
+        </ul>
+    </div>
+    
+    <div class="row">
+            Copyright © 2023 Group Project DAMAT - All rights reserved 
+    </div>
+    
+  </div>
+    
+</footer>    
+</body>
+
+
